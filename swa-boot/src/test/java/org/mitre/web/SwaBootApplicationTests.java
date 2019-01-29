@@ -1,4 +1,4 @@
-package com.c3isp.oidc;
+package org.mitre.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
