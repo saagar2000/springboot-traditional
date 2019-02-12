@@ -28,8 +28,8 @@
 				</p>
 			
 				<ul>
-					<li><a href="user">User</a>, requires the user to be logged in with the <code>ROLE_USER</code> Spring Security authority.</li>
-					<li><a href="admin">Admin</a>, requires the user to be logged in with the <code>ROLE_ADMIN</code> Spring Security authority. 
+					<li><a href=" <spring:url value="user" /> ">User</a>, requires the user to be logged in with the <code>ROLE_USER</code> Spring Security authority.</li>
+					<li><a href=" <spring:url value="admin" /> ">Admin</a>, requires the user to be logged in with the <code>ROLE_ADMIN</code> Spring Security authority. 
 					    See below for the currently configured list of admin accounts.</li>
 					<security:authorize access="hasRole('ROLE_USER')">
 						<c:url var="logoutUrl" value="/logout"/> 
@@ -42,7 +42,7 @@
 						</form>
 					</security:authorize>
 					<security:authorize access="!hasRole('ROLE_USER')">
-						<li><a href="login">Log in</a>, log in directly and return to this page.</li>
+						<li><a href=" <spring:url value="login" /> ">Log in</a>, log in directly and return to this page.</li>
 					</security:authorize>
 				</ul>
 			

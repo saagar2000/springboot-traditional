@@ -19,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @SpringBootApplication
 
 @EnableWebSecurity
+
 /*
  * @EnableAutoConfiguration(exclude ={SecurityFilterAutoConfiguration.class,
  * SpringBootWebSecurityConfiguration.class})
