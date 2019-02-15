@@ -32,20 +32,14 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * 
  * }
  */
-@ImportResource("classpath*:servlet-context.xml")
 
 
-public class SwaBootApplication extends SpringBootServletInitializer {
+public class SwaBootApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(applicationClass, args);
     }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(applicationClass);
-    }
-
+    
     private static Class<SwaBootApplication> applicationClass = SwaBootApplication.class;
 }
 
